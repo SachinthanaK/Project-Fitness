@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+root {
+  --coll: #ffc20e;
+}
+body {
+  background-color: black;
+}
+
+.mainhead1 {
+  font-size: 5rem; /* Adjusted to a slightly smaller size for balance */
+  font-weight: 700; /* Slightly less bold */
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em; /* Slightly tighter letter spacing */
+  background: linear-gradient(
+    45deg,
+    #fcb045,
+    #e6e5d7,
+    #fcb045
+  ); /* Yellow gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0; /* Added some margin for spacing */
+  padding: 0;
+  position: relative;
+}
+
+.mainhead1::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+  height: 102%;
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Lighter, thinner border */
+  box-sizing: border-box;
+  pointer-events: none;
+  border-radius: 5px; /* Added border-radius for a softer look */
+}
+.mainhead2 {
+  font-size: 2.5rem; /* Slightly smaller for a sub-headline */
+  font-weight: 600; /* Less bold than the main headline */
+  text-align: center;
+  letter-spacing: 0.03em; /* Subtle letter spacing */
+  color: #fcb045; /* Complementary yellow color */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0; /* Margin for spacing */
+}
+
+.mainhead2::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #fcb045; /* Same yellow color */
+  margin: 0.5rem auto; /* Centered and spaced */
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fcb045;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
