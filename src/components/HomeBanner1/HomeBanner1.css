@@ -82,3 +82,21 @@
   font-weight: 700;
   font-size: 18px;
 }
+
+.meters .textincircle {
+  color: #333;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meters .textincircle .hrling {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin: 1px 0;
+}
